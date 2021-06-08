@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background: url(./background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover ;
+    height:100vh;
+}
+
+.keys{
+    display: flex;
+    flex: 1; /*flex: 1 sets flex-grow to 1 (whereas the default value is 0, also shorthen of flex grow, shrink and flex-basis; ).*/
+    height: 100vh;
+    align-items: center; /* it will vertically center the content inside keys */
+    justify-content:center; /* it will horizontally center the content inside keys */
+
+}
+
+.key{
+    border: .4rem solid black;   /*rem unit - takes the font size of the root element */ 
+    border-radius: 0.5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    transition: all 0.07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow:0 0 0.5rem black; /* offset-x | offset-y | blur-radius | color */
+} 
+.playing{
+    transform:scale(1.1); 
+    border-color: aqua;
+    box-shadow:0 0 1rem #ffc600; 
+}
+kbd {
+    display: block;
+    font-size: 4rem;
+
+}
+
+.sound {
+    font: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing:.1rem; 
+}
