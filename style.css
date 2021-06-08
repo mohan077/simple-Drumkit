@@ -13,6 +13,20 @@ body{
     height:100vh;
 }
 
+
+.center{
+    width: 100%;
+    padding: 8px;
+    background: white;
+    box-shadow: 0px 0px 5px black; 
+    text-align: center;
+    font-size:4rem;
+    
+}
+.nav .h2{
+    
+     }
+
 .keys{
     display: flex;
     flex: 1; /*flex: 1 sets flex-grow to 1 (whereas the default value is 0, also shorthen of flex grow, shrink and flex-basis; ).*/
@@ -21,6 +35,7 @@ body{
     justify-content:center; /* it will horizontally center the content inside keys */
 
 }
+
 
 .key{
     border: .4rem solid black;   /*rem unit - takes the font size of the root element */ 
@@ -51,3 +66,4 @@ kbd {
     text-transform: uppercase;
     letter-spacing:.1rem; 
 }
+

@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- nav top -->
+    <div class="center">
+      <p>DRUM KIT BY MOHAN</p>
+    </div>
+
     <!-- for keys -->
     <div class="keys">
       <div data-key="65" class="key">
@@ -80,7 +85,9 @@
 
       window.addEventListener("keydown", playthedrum);
       const keys = document.querySelectorAll(".key");
-      keys.forEach(key => key.addEventListener("transitionend", removetransition));
+      keys.forEach((key) =>
+        key.addEventListener("transitionend", removetransition)
+      );
     </script>
   </body>
 </html>
